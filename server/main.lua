@@ -46,7 +46,7 @@ end
 
 function GetLastCharacter(source)
     local LastChar = MySQLAsyncExecute("SELECT `charid` FROM `user_lastcharacter` WHERE `steamid` = '"..GetPlayerIdentifiers(source)[1].."'")
-    if LastChar[1].charid ~= nil then
+    if LastChar[1] ~= nil and LastChar[1].charid ~= nil then
         return tonumber(LastChar[1].charid)
     else
         MySQLAsyncExecute("INSERT INTO `user_lastcharacter` (`steamid`, `charid`) VALUES('"..GetPlayerIdentifiers(source)[1].."', 1)")
