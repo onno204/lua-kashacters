@@ -10,7 +10,7 @@
 
 ## Installation
 
-> First of all to get this working you need to comment out the `NetworkIsSessionStarted()` Citizen.CreateThread() in *es_extended\client\main.lua* on line *6 - 16*
+> First of all to get this working you need to comment out the `NetworkIsSessionStarted()` Citizen.CreateThread() in *essentialmode\client\main.lua* on line *6 - 16*
 
 >Second you need to upload the SQL file to your database **BEFORE** you start the resource.
 
