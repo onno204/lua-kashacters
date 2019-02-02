@@ -16,6 +16,15 @@
 
 >At last you will put the resource (*esx_kashacters*) in your resource folder.
 
+>In the *esx_kashacters\server\main.lua* you can edit the tables where an identifier is needed as such:
+```
+local IdentifierTables = {
+    {table = "users", column = "identifier"},
+    {table = "owned_vehicles", column = "owner"},
+    {table = "user_accounts", column = "identifier"},
+}
+```
+
 ## Credits
 
 > ESX Framework and **KASH** for creating the resource. You can do whatever the f with it what you want but it is nice to give the main man credits ;)
