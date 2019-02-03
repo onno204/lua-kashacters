@@ -56,7 +56,8 @@ $("#deletechar").click(function () {
     Kashacter.CloseUI = function() {
         $('.main-container').css({"display":"none"});
         $(".character-box").removeClass('active-char');
-        $(".character-box").html('<h3 class="character-fullname"><i class="fas fa-plus"></i></h3><div class="character-info"><p class="character-info-new">Create new character</p></div>').attr("data-ischar", "false");
+        $("#delete").css({"display":"none"});
+		$(".character-box").html('<h3 class="character-fullname"><i class="fas fa-plus"></i></h3><div class="character-info"><p class="character-info-new">Create new character</p></div>').attr("data-ischar", "false");
     };
     window.onload = function(e) {
         window.addEventListener('message', function(event) {
