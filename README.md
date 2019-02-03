@@ -24,6 +24,7 @@ local IdentifierTables = {
     {table = "user_accounts", column = "identifier"},
 }
 ```
+> **Pay ATTENTION: You have to call the resource 'esx_kashacters' in order for the javascript to work!!!**
 
 ## Credits
 
